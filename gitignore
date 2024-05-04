@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Shopify files that shouldn't be tracked
+settings_data.json  # Sensitive theme settings data
+
+# Build files
+/dist/
+/build/
+
+# Temporary files
+.tmp/
+.temp/
+
+# Ignore environment configuration files
+.env
