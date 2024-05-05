@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Welcome to {{ Scent Blender Aroma Company }}</h1>
+    <title>My Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+    <script src="{{ 'scripts.js' | asset_url }}"></script>
+    
+</head>
+<body>
+    <h1>Welcome to Scent Blender Aroma Company</h1>
+    <p>Discover our unique blends of car freshener oils.</p>
+    <script src="scripts.js"></script>
+    {{ content_for_header }}  <!-- Essential for loading Shopify scripts -->
+    {{ content_for_layout }}  <!-- Where content from other templates will be injected -->
+</body>
+</html>
+
