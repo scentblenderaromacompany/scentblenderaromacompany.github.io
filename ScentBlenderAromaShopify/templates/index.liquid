@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }} | Scent Blender Aroma Company</title>
+    <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}">
+    <script src="{{ 'scripts.js' | asset_url }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Scent Blender Aroma Company</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections/all">Shop</a></li>
+                <li><a href="/pages/about">About Us</a></li>
+                <li><a href="/pages/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        {{ content_for_layout }}
+    </main>
+    <footer>
+        <p>© {{ 'now' | date: "%Y" }} Scent Blender Aroma Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
